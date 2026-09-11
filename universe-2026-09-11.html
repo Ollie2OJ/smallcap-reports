@@ -1,0 +1,296 @@
+<!doctype html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><meta name='robots' content='noindex, nofollow, noarchive'><title>Weekly shortlist 2026-09-11</title><style>
+:root {
+  --ink: #1a1a1a; --muted: #6b6b6b; --faint: #9a9a9a;
+  --rule: #e2e0dc; --paper: #ffffff; --wash: #faf9f7;
+  --accent: #2f4f6f;
+  --flag-tone: #7a6a4f; --flag-diff: #4f6a7a; --flag-quant: #6a5f7a;
+  --add-bg: #eef3ee; --del-bg: #f5eeee;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0; background: var(--wash); color: var(--ink);
+  font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+  font-size: 16px; line-height: 1.6;
+}
+.sheet { max-width: 860px; margin: 0 auto; background: var(--paper);
+         padding: 40px 44px 64px; }
+h1, h2, h3, h4 { font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+                 line-height: 1.25; margin: 0 0 8px; font-weight: 600; }
+h1 { font-size: 25px; letter-spacing: -0.2px; }
+h2 { font-size: 19px; margin-top: 40px; padding-bottom: 6px;
+     border-bottom: 2px solid var(--rule); }
+h3 { font-size: 16px; margin-top: 26px; color: var(--accent); }
+h4 { font-size: 14px; margin-top: 18px; color: var(--muted);
+     text-transform: uppercase; letter-spacing: 0.6px; }
+p { margin: 0 0 12px; }
+a { color: var(--accent); }
+small, .small { font-size: 13px; color: var(--muted); }
+.sub { color: var(--muted); font-size: 14px; margin-bottom: 4px; }
+.standfirst { background: var(--wash); border-left: 3px solid var(--accent);
+              padding: 14px 18px; margin: 22px 0 30px; font-size: 14.5px; }
+.standfirst strong { display: block; margin-bottom: 4px; }
+.warn { background: #fdf6ec; border-left: 3px solid #b8893f; padding: 12px 16px;
+        margin: 16px 0; font-size: 14px; }
+.warn ul { margin: 6px 0 0 18px; padding: 0; }
+.gapbanner { margin: 22px 0 0; border-left-width: 5px; }
+.gapbanner li { margin-bottom: 8px; }
+.gapaction { margin-top: 3px; font-size: 13.5px; color: #7a5c28; }
+.gapfoot { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
+.pointer { border-left: 3px solid var(--ink); padding: 9px 14px;
+           margin: 18px 0; font-size: 14.5px; background: var(--wash); }
+.notrun { color: var(--muted); font-size: 12.5px; font-style: italic; }
+/* Section structure. The numbered heading is the document's spine. */
+.majorsec { margin: 40px 0 6px; }
+.majorhead { display: flex; align-items: baseline; gap: 10px;
+             border-bottom: 2px solid var(--ink); padding-bottom: 7px;
+             margin-bottom: 8px; }
+.secnum { font-size: 13px; color: var(--paper); background: var(--ink);
+          border-radius: 3px; padding: 1px 7px; font-weight: 600;
+          flex: 0 0 auto; }
+.secintro { font-size: 14px; color: var(--muted); margin: 0 0 14px; }
+/* Expand/collapse. Sticky so it is reachable after scrolling. */
+.viewctl { position: sticky; top: 0; z-index: 20; display: flex;
+           gap: 8px; padding: 9px 0; margin: 0 0 6px;
+           background: var(--paper); border-bottom: 1px solid var(--rule); }
+.viewbtn { font: inherit; font-family: -apple-system, 'Segoe UI',
+           Helvetica, Arial, sans-serif; font-size: 13px;
+           padding: 7px 14px; min-height: 40px; cursor: pointer;
+           border: 1px solid var(--rule); border-radius: 5px;
+           background: var(--wash); color: var(--ink); }
+.viewbtn:hover { border-color: var(--accent); color: var(--accent); }
+/* Per-metric readings. */
+.metricread { border-top: 1px solid var(--rule); padding: 16px 0; }
+.metricval { color: var(--ink); font-variant-numeric: tabular-nums; }
+.metriccontext { background: var(--wash); border-left: 3px solid var(--rule);
+                 padding: 10px 14px; margin: 10px 0 0; font-size: 13.5px; }
+.metriccontext ul { margin: 6px 0 0 18px; padding: 0; }
+/* Reaction items and source tiers. Tier is a shape, never a colour
+   judgment: all four render in the same ink, distinguished by weight
+   and border, because the tier says how much human judgement went in,
+   not whether the opinion is any good. */
+.reactitem { border-top: 1px solid var(--rule); padding: 12px 0; }
+.reacthead { margin-bottom: 5px; }
+.tier { display: inline-block; font-size: 11px; letter-spacing: .3px;
+        text-transform: uppercase; padding: 1px 7px; border-radius: 3px;
+        border: 1px solid var(--rule); color: var(--muted); }
+.tier-primary, .tier-analyst { border-color: var(--ink); color: var(--ink); }
+.tier-aggregator, .tier-unknown { border-style: dashed; }
+.coverage { background: var(--wash); border-left: 3px solid var(--accent);
+            padding: 10px 14px; margin: 12px 0; font-size: 14px; }
+.provenance { margin: 14px 0; font-size: 14px; }
+.provenance > summary { cursor: pointer; color: var(--muted); }
+.trendtrack { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+.trendcell { border: 1px solid var(--rule); border-radius: 4px;
+             padding: 7px 11px; min-width: 68px; }
+.trendyear { font-size: 11px; color: var(--muted); letter-spacing: .4px; }
+.trendval { font-size: 15px; font-variant-numeric: tabular-nums; }
+.tension { border-left: 3px solid var(--accent); background: var(--wash);
+           padding: 11px 15px; margin: 12px 0; }
+.accountmap { border-top: 1px solid var(--rule); padding: 14px 0; }
+.accounthead { margin-bottom: 4px; }
+.threads { margin: 8px 0 0 18px; padding: 0; font-size: 14px; }
+.threads li { margin-bottom: 5px; }
+.tag-src { background: var(--wash); color: var(--muted); }
+.cam { border-left: 2px solid var(--rule); padding-left: 14px;
+       margin: 14px 0; }
+.scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+table { border-collapse: collapse; width: 100%; margin: 18px 0; font-size: 14px;
+        font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+th { text-align: left; font-weight: 600; font-size: 12px; letter-spacing: 0.4px;
+     text-transform: uppercase; color: var(--muted); padding: 8px 10px;
+     border-bottom: 2px solid var(--rule); }
+td { padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+tr:hover td { background: var(--wash); }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+.tag { display: inline-block; font-size: 11px; letter-spacing: 0.4px;
+       text-transform: uppercase; padding: 2px 7px; border-radius: 2px;
+       font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+       border: 1px solid currentColor; }
+.tag-tone { color: var(--flag-tone); } .tag-diff { color: var(--flag-diff); }
+.tag-quant { color: var(--flag-quant); } .tag-data { color: #8a5a5a; }
+.finding { border-left: 2px solid var(--rule); padding: 2px 0 2px 16px;
+           margin: 20px 0; }
+.finding .topic { font-weight: 600; font-family: -apple-system,'Segoe UI',sans-serif;
+                  font-size: 15px; }
+blockquote { margin: 10px 0; padding: 10px 14px; background: var(--wash);
+             border-left: 2px solid var(--faint); font-size: 14.5px; }
+.cite { font-size: 12.5px; color: var(--muted); font-family: -apple-system,
+        'Segoe UI', sans-serif; }
+.unverified { background: #fdf0f0; border-left: 2px solid #a55; }
+.unverified blockquote { text-decoration: line-through; opacity: 0.75; }
+.diffgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+            margin: 12px 0; }
+.diffcol { background: var(--wash); padding: 12px 14px; font-size: 14px; }
+.diffcol h5 { margin: 0 0 8px; font-size: 11px; letter-spacing: 0.5px;
+              text-transform: uppercase; color: var(--muted);
+              font-family: -apple-system, 'Segoe UI', sans-serif; }
+ins { background: var(--add-bg); text-decoration: none;
+      border-bottom: 1px solid #9db89d; }
+del { background: var(--del-bg); border-bottom: 1px solid #b89d9d; }
+details { margin: 12px 0; }
+summary { cursor: pointer; font-size: 13px; color: var(--accent);
+          font-family: -apple-system, 'Segoe UI', sans-serif; }
+details[open] summary { margin-bottom: 10px; }
+.ask { border: 1px solid var(--rule); padding: 14px 18px; margin: 14px 0;
+       background: var(--paper); }
+.ask li { margin-bottom: 10px; }
+.interp { border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+          padding: 14px 18px; margin: 16px 0; background: var(--paper); }
+.interp h4 { margin: 0 0 8px; color: var(--ink); text-transform: none;
+             letter-spacing: 0; font-size: 15px; }
+.interp .val { float: right; font-variant-numeric: tabular-nums;
+               color: var(--muted); font-size: 14px; font-weight: 600; }
+.interp dl { margin: 0; font-size: 14px; }
+.interp dt { font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase;
+             color: var(--muted); margin-top: 10px;
+             font-family: -apple-system, 'Segoe UI', sans-serif; }
+.interp dd { margin: 3px 0 0; }
+.interp .ref { font-size: 12.5px; color: var(--faint); margin-top: 10px; }
+.chart { margin: 20px 0 26px; padding: 0; }
+.chart svg { display: block; width: 100%; height: auto; }
+.chart figcaption { font-size: 12.5px; color: var(--muted); margin-top: 8px;
+                    line-height: 1.5;
+                    font-family: -apple-system, 'Segoe UI', sans-serif; }
+.primer { background: var(--wash); padding: 16px 20px; margin: 18px 0;
+          font-size: 14.5px; }
+.primer ol { margin: 8px 0 0 20px; padding: 0; }
+.primer li { margin-bottom: 8px; }
+.tiles { display: grid; gap: 10px; margin: 24px 0 10px;
+         grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); }
+.tile { background: var(--paper); border: 1px solid var(--rule);
+        padding: 12px 13px 11px;
+        font-family: -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; }
+.tile-v { font-size: 21px; font-weight: 600; letter-spacing: -0.3px;
+          font-variant-numeric: tabular-nums; line-height: 1.15; }
+.tile-l { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;
+          color: var(--muted); margin-top: 5px; }
+.tile-n { font-size: 11.5px; color: var(--faint); margin-top: 3px;
+          line-height: 1.35; }
+.situation { border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+             padding: 16px 20px 14px; margin: 20px 0 26px; }
+.situation h4 { margin: 0 0 10px; color: var(--ink); text-transform: none;
+                letter-spacing: 0; font-size: 15px; }
+.situation ul { margin: 0 0 10px 18px; padding: 0; font-size: 14.5px; }
+.situation li { margin-bottom: 7px; }
+.situation p { margin: 0; }
+.lede { font-size: 17.5px; line-height: 1.5; margin: 14px 0 16px; }
+.facts { margin: 14px 0; }
+.facts td { padding: 8px 10px 8px 0; border-bottom: 1px solid var(--rule);
+            font-family: Georgia, 'Times New Roman', serif; font-size: 14.5px; }
+.facts td.k { width: 172px; color: var(--muted); font-size: 12px;
+              text-transform: uppercase; letter-spacing: 0.5px;
+              font-family: -apple-system, 'Segoe UI', sans-serif;
+              vertical-align: top; padding-top: 11px; }
+.caution { background: var(--wash); border-left: 3px solid var(--faint);
+           padding: 12px 16px; margin: 16px 0; font-size: 13.5px; }
+.battery td:first-child { width: 34%; }
+.battery details { margin: 6px 0 0; }
+.battery summary { font-size: 12px; }
+.pos { color: var(--faint); }
+.tag-peer-common { color: #6b6b6b; }
+.tag-peer-mixed { color: var(--flag-tone); }
+.tag-peer-unique { color: var(--flag-diff); }
+.question { border: 1px solid var(--rule); border-left: 3px solid var(--accent);
+            padding: 16px 20px 12px; margin: 20px 0; }
+.question h4 { margin: 0 0 10px; color: var(--ink); text-transform: none;
+               letter-spacing: 0; font-size: 15px; }
+.question p { font-size: 15px; margin: 0 0 10px; }
+h4.tight { margin: 26px 0 6px; color: var(--ink); text-transform: none;
+           letter-spacing: 0; font-size: 15px; }
+table.compact { margin: 8px 0 6px; font-size: 13.5px; }
+table.compact td, table.compact th { padding: 6px 10px 6px 0; }
+table.compact .m { border-bottom: 1px dotted var(--faint); cursor: help; }
+.sparkcell { width: 88px; padding-top: 8px !important; }
+.spark { display: block; }
+.foldnote { font-size: 13px; color: var(--faint); margin: 18px 0 0;
+            font-family: -apple-system, 'Segoe UI', sans-serif; }
+hr.fold { border: none; border-top: 2px solid var(--rule); margin: 26px 0 18px; }
+details.sect { margin: 0; border-bottom: 1px solid var(--rule); }
+details.sect > summary { padding: 13px 2px; font-size: 14.5px; font-weight: 600;
+                        color: var(--ink);
+                        font-family: -apple-system, 'Segoe UI', sans-serif; }
+details.sect[open] > summary { border-bottom: 1px solid var(--rule);
+                               margin-bottom: 14px; }
+details.sect > summary:hover { color: var(--accent); }
+.vault { margin: 30px 0 0; border-top: 2px solid var(--rule); padding-top: 14px; }
+.vault > summary { font-size: 14px; font-weight: 600; }
+.footer { margin-top: 48px; padding-top: 18px; border-top: 2px solid var(--rule);
+          font-size: 13px; color: var(--muted); }
+/* --------------------------------------------------------------------
+   Phone. Tested at 390px (iPhone 14/15/16 logical width).
+
+   The deep brief is prose and reflows on its own once the sheet padding
+   comes in. The scan table does not: eleven columns cannot be read at this
+   width, and a horizontally-scrolling table is one nobody scrolls. So it
+   becomes one card per company, with each cell labelled from its
+   data-label attribute.
+
+   Nothing here introduces colour or emphasis that the desktop layout does
+   not already have. A narrow screen changes the arrangement, never what
+   the document says about a company.
+   -------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  .sheet { padding: 22px 16px 40px; max-width: 100%; }
+  h1 { font-size: 22px; }
+  h2 { font-size: 18px; margin-top: 30px; }
+  .diffgrid { grid-template-columns: 1fr; }
+  blockquote { margin-left: 0; padding-left: 12px; }
+
+  /* Wide tables scroll rather than overflow the page. */
+  .scroll { overflow-x: auto; -webkit-overflow-scrolling: touch;
+            margin-left: -16px; margin-right: -16px; padding: 0 16px; }
+
+  /* The scan table becomes one card per company. */
+  .shortlist thead { display: none; }
+  .shortlist, .shortlist tbody, .shortlist tr, .shortlist td { display: block;
+                                                               width: 100%; }
+  .shortlist tr { border: 1px solid var(--rule); border-radius: 6px;
+                  padding: 6px 12px 10px; margin: 0 0 12px;
+                  background: var(--paper); }
+  .shortlist tr:hover td { background: transparent; }
+  .shortlist td { display: flex; justify-content: space-between;
+                  align-items: baseline; gap: 14px; text-align: right;
+                  padding: 6px 0; border-bottom: 1px solid var(--grid, #efeeea); }
+  .shortlist td:last-child { border-bottom: 0; }
+  .shortlist td::before { content: attr(data-label); text-align: left;
+                          font-size: 11px; letter-spacing: 0.4px;
+                          text-transform: uppercase; color: var(--muted);
+                          flex: 0 0 42%; font-family: -apple-system,
+                          'Segoe UI', Helvetica, Arial, sans-serif; }
+  /* The ticker leads the card, so it gets no label and full width. */
+  .shortlist td[data-label='Ticker'] { font-size: 19px; text-align: left;
+                                       border-bottom: 0; padding-bottom: 0; }
+  .shortlist td[data-label='Ticker']::before { display: none; }
+  .shortlist td[data-label='Company'] { text-align: left; color: var(--muted);
+                                        font-size: 14px; padding-top: 0; }
+  .shortlist td[data-label='Company']::before { display: none; }
+  .shortlist td[data-label='#'] { display: none; }
+  .shortlist td[data-label='Why listed'] { display: block; text-align: left; }
+  .shortlist td[data-label='Why listed']::before { display: block;
+                                                   margin-bottom: 3px; }
+
+  /* Multi-year tracks wrap to two per row rather than squeezing. */
+  .trendcell { flex: 1 1 calc(50% - 8px); min-width: 0; }
+  /* The control bar spans the full width and keeps a 44px tap target. */
+  .viewctl { margin: 0 -16px; padding: 8px 16px; }
+  .viewbtn { flex: 1 1 0; min-height: 44px; }
+  .majorhead { flex-wrap: wrap; }
+  .metriccontext { margin-left: 0; }
+}
+</style></head><body><div class='sheet'>
+<div class='sub'>Weekly shortlist &middot; 2026-09-11</div>
+<h1>What to read first</h1>
+<div class='standfirst'><strong>Ranked by 'needs a human look', not by attractiveness.</strong>These rows are not recommendations and the order is not a preference. A high F-score here means the backward-looking accounts do not yet show what the price implies &mdash; which is a divergence worth investigating, and is equally consistent with a value trap. Run a full brief on the two or three you actually intend to read.</div>
+<div class='warn gapbanner'><strong>This report is complete except for 1 flagged gap</strong><ul><li><strong>Stopped after 600 price lookups of 2159 candidates, to stay inside the provider&#x27;s allowance.</strong> The remainder were NOT screened — this is a partial scan, not an empty result.</li></ul><p class='gapfoot'>Everything else below ran normally. These are listed here rather than used as a reason to withhold the report &mdash; but they are real holes, and the sections they affect are absent or marked, never quietly filled in.</p></div>
+<div class='warn'><strong>What this screen could not see</strong><ul><li>Signals unavailable on the free tier: short_interest. The screen cannot see whether short interest is rising. That is one of the four M4 trap signals, and it is the one that most directly reflects other people having already done this work. Its absence makes the free screen materially blinder to value traps, not merely less complete.</li><li>Floors applied: market cap $300m to $2000m, minimum $750k average daily dollar volume. 10 companies were excluded for thin trading alone. That exclusion is a deliberate trade-off and it costs something: illiquidity is the flip side of the inefficiency this strategy hunts, so the thinnest names are where the largest mispricings live. They are filtered out because you cannot get in or out of them, not because they are unattractive.</li><li>Piotroski, Altman and Beneish are NOT computed at universe scale — they need per-company detail that would mean thousands of requests. Run a full brief on any name you intend to read and they are computed there.</li></ul></div>
+<table class='shortlist'><thead><tr><th>#</th><th>Ticker</th><th>Company</th><th class='num'>F</th><th class='num'>Z</th><th class='num'>M</th><th>Insiders 90d</th><th>Short interest</th><th>Liquidity</th><th>Data</th><th>Why listed</th></tr></thead><tbody><tr><td class='num' data-label='#'>1</td><td data-label='Ticker'><strong>WNC</strong></td><td data-label='Company'>WABASH NATIONAL CORPORATION</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>20 sold / 14 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$12.8m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe, but the accounts are not clean — read why before assuming the price is the anomaly; accruals ratio 0.17 — profit well ahead of cash; operating cash flow only 0.06x earnings</td></tr><tr><td class='num' data-label='#'>2</td><td data-label='Ticker'><strong>KOP</strong></td><td data-label='Company'>KOPPERS HOLDINGS INC.</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>59 sold / 107 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$8.6m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe on sales or book while the accounts still show positive returns and cash-backed earnings — the divergence worth investigating; revenue down 10% year on year</td></tr><tr><td class='num' data-label='#'>3</td><td data-label='Ticker'><strong>PZZA</strong></td><td data-label='Company'>PAPA JOHN’S INTERNATIONAL, INC.</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>12 sold / 37 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$26.3m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe on sales or book while the accounts still show positive returns and cash-backed earnings — the divergence worth investigating; return on assets fell 5.7 points</td></tr><tr><td class='num' data-label='#'>4</td><td data-label='Ticker'><strong>CRI</strong></td><td data-label='Company'>CARTER’S, INC</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>30 sold / 38 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$32.9m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe on sales or book while the accounts still show positive returns and cash-backed earnings — the divergence worth investigating; return on assets fell 4.0 points</td></tr><tr><td class='num' data-label='#'>5</td><td data-label='Ticker'><strong>FMC</strong></td><td data-label='Company'>FMC CORPORATION</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>21 sold / 65 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$42.0m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe, but the accounts are not clean — read why before assuming the price is the anomaly; revenue down 18% year on year; return on assets fell 26.0 points</td></tr><tr><td class='num' data-label='#'>6</td><td data-label='Ticker'><strong>GTN</strong></td><td data-label='Company'>GRAY MEDIA, INC.</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>13 sold / 22 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$6.3m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe, but the accounts are not clean — read why before assuming the price is the anomaly; revenue down 15% year on year; return on assets fell 4.4 points</td></tr><tr><td class='num' data-label='#'>7</td><td data-label='Ticker'><strong>PAR</strong></td><td data-label='Company'>PAR TECHNOLOGY CORPORATION</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>14 sold / 75 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$20.8m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe, but the accounts are not clean — read why before assuming the price is the anomaly; operating cash flow only 0.32x earnings; return on assets fell 5.8 points</td></tr><tr><td class='num' data-label='#'>8</td><td data-label='Ticker'><strong>MGPI</strong></td><td data-label='Company'>MGP Ingredients, Inc.</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>26 sold / 19 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$2.9m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe, but the accounts are not clean — read why before assuming the price is the anomaly; revenue down 24% year on year; return on assets fell 11.2 points</td></tr><tr><td class='num' data-label='#'>9</td><td data-label='Ticker'><strong>CMCO</strong></td><td data-label='Company'>COLUMBUS McKINNON CORP</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>33 sold / 83 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$10.3m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe, but the accounts are not clean — read why before assuming the price is the anomaly; operating cash flow only 0.64x earnings; return on assets fell 12.7 points</td></tr><tr><td class='num' data-label='#'>10</td><td data-label='Ticker'><strong>ULH</strong></td><td data-label='Company'>UNIVERSAL LOGISTICS HOLDINGS, INC.</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>0 sold / 3 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$1.1m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe, but the accounts are not clean — read why before assuming the price is the anomaly; revenue down 16% year on year; return on assets fell 12.9 points</td></tr><tr><td class='num' data-label='#'>11</td><td data-label='Ticker'><strong>APOG</strong></td><td data-label='Company'>APOGEE ENTERPRISES, INC.</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>12 sold / 51 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$8.8m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe on sales or book while the accounts still show positive returns and cash-backed earnings — the divergence worth investigating</td></tr><tr><td class='num' data-label='#'>12</td><td data-label='Ticker'><strong>MLKN</strong></td><td data-label='Company'>MillerKnoll, Inc.</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>59 sold / 58 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$15.8m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe on sales or book while the accounts still show positive returns and cash-backed earnings — the divergence worth investigating</td></tr><tr><td class='num' data-label='#'>13</td><td data-label='Ticker'><strong>MOV</strong></td><td data-label='Company'>MOVADO GROUP, INC.</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>17 sold / 47 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$7.5m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe on sales or book while the accounts still show positive returns and cash-backed earnings — the divergence worth investigating</td></tr><tr><td class='num' data-label='#'>14</td><td data-label='Ticker'><strong>SMP</strong></td><td data-label='Company'>Standard Motor Products, Inc.</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>14 sold / 26 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$5.5m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe on sales or book while the accounts still show positive returns and cash-backed earnings — the divergence worth investigating</td></tr><tr><td class='num' data-label='#'>15</td><td data-label='Ticker'><strong>VLGEA</strong></td><td data-label='Company'>VILLAGE SUPER MARKET, INC.</td><td class='num' data-label='Piotroski F'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Altman Z'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='num' data-label='Beneish M'><span class='notrun' title='Not computed at universe scale — run a full brief on this name and it is computed there.'>not run</span></td><td class='small' data-label='Insiders 90d'>11 sold / 11 bought</td><td class='small' data-label='Short interest'><span class='tag tag-data'>needs paid tier</span></td><td data-label='Liquidity'>$2.4m/day</td><td data-label='Data'>&mdash;</td><td class='small' data-label='Why listed'>priced in the cheapest quarter of this universe on sales or book while the accounts still show positive returns and cash-backed earnings — the divergence worth investigating</td></tr></tbody></table>
+<p class='small'>F = Piotroski (0-9). Z = Altman distress. M = Beneish manipulation-likelihood (above &minus;1.78 is the model's flag). Tone = direction of change against the company's own baseline. None of these is a verdict.</p>
+<h2>What changed since last week</h2>
+<h4>New to the list</h4><ul><li>APOG — new to the list</li></ul>
+<h4>Dropped off</h4><ul><li>SSP — no longer listed</li></ul>
+<h2>Where the evidence stands</h2>
+<p class='small'>No calls scored yet. Nothing here is evidence of anything. Record rejections as you make them — they cost nothing, they need no capital, and they are the fastest way to build a sample that tests the one skill actually being claimed.</p>
+<p class='small'>Calls recorded: 0 &middot; scored: 0 &middot; rejections scored: 0.</p>
+<div class='footer'><p>Ranked by what warrants attention, never by what looks good. Run a full forensic brief with <code>python brief.py TICKER</code> for the names you choose to read. The table is the scan layer; the filing is the work.</p></div>
+</div></body></html>
